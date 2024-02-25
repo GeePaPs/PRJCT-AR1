@@ -1,0 +1,192 @@
+/* Styling The Header components*/
+.header {
+    display: flex;
+}
+
+.sitelogo {
+    max-width: 240px; /* Adjust max-width as needed */
+    height: 143px;
+}
+
+.sitetitle {
+    font-size: 48px;
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 60px;
+    margin-bottom: 0%;
+}
+
+.new-page-link{
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.new-page-link img:hover{
+    transform: scale(1.1);
+}
+.newpage{
+    margin-top: 6%;
+    margin-left:0;
+    float:right;
+    color: #000000;
+}
+.random-page-link{
+    margin-left: 5%;
+    margin-top: 3.5%;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.random-page-link img:hover{
+    transform: scale(1.1)
+}
+.randompage{
+    margin-top: 6%;
+    margin-left: 0;
+    float: right;
+    color: black;
+}
+
+/*adding a sticky note*/
+.sticky-note {
+    /* Make it relative for absolute positioning of pseudo-elements */
+    border: 2px solid #ffcc00; /* Yellow border */
+    background-color: #ffff99; /* Light yellow background */ 
+    border-radius: 10px; /* Rounded corners */
+    font-size: 24px; /* Adjust text size as needed */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center; /* Center-align the text */
+    line-height: 1.5; /* Adjust line height for spacing */
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    padding: 8px 16px;
+    margin: 16px 0 8px 0;
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*The Search Container*/
+.search-container {
+    margin-left: 10%;
+    margin-top: 60px;
+
+}
+
+.search-box {
+    width: 400px; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #00FFE0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 20px 20px;
+    background-color: #00c3ff; /* Change color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #02a1c9; /* Change color as needed */
+}
+
+
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0;
+    gap: 4px;
+    padding: 8px ;
+    border-radius: 8px;
+ }
+
+ .category-item img {
+    width: 39px;
+    height:44 ;
+    margin-right: 10px;
+ }
+
+ .category-item span {
+    font-size: 16px; /* Adjust text size as needed */
+    text-decoration: none;
+    color: blue;
+ }
+
+ .category-item p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+ }
+
+ .category-item a {
+    text-decoration: none;
+ }
+ .category-item a:hover span {
+    color: rgb(9, 2, 97);
+ }
+
+ .paragraph{
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    text-align: center; /* Align items horizontally */
+    padding: 20px; /* Example padding */
+ }
+ .category-item p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+ }
+
+ /*Adding Cards*/
+ .post-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-details {
+    padding: 20px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}

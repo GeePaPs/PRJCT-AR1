@@ -1,0 +1,111 @@
+
+/* General styles for all screen sizes */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* Styling The Header components*/
+.header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 32px;
+}
+
+.sitelogo {
+    max-width: 240px; /* Adjust max-width as needed */
+    height: 143px;
+    margin-bottom: 0;
+}
+
+.sitetitle {
+    font-size: 38px;
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/*The Search Container*/
+.search-container {
+    margin: 16px 0;
+}
+
+.search-box {
+    width: 200px; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #00FFE0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.search-button {
+    padding: 20px 20px;
+    background-color: #00c3ff; /* Change color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-page-links-wrapper{
+    display: flex;
+}
+
+.new-page-links-wrapper a{
+    display: flex;
+    gap: 4px;
+    padding: 4px 8px;
+}
+
+.new-page-links-wrapper a:hover{
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+
+.random-page-link{
+    margin-bottom: 0;
+}
+
+.random-page-link img:hover{
+    transform: scale(1.1)
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    margin: 8px 24px;
+}
+
+.categories .category-item:hover{
+    background-color: lightcyan;
+}
+
+
+@media only screen and (max-width: 600px){
+/*Controlling the grid*/
+ .post-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+}
